@@ -36,4 +36,3 @@ where OBJECT := { cpu | mem | net | disk }
 * OBJECT: mem
 * OBJECT: net
 * OBJECT: disk
-
