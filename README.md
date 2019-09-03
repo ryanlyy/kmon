@@ -11,6 +11,8 @@ where OBJECT := { cpu | mem | net | disk }
       OPTION := { --version] }
 ```
 
+*NOTE: test is only used to test kmon framework.*
+
 ## COMMAND
 **Manditory COMMAND for each OBJECT:**
 * dump
@@ -36,3 +38,4 @@ where OBJECT := { cpu | mem | net | disk }
 * OBJECT: mem
 * OBJECT: net
 * OBJECT: disk
+
