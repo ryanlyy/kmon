@@ -11,18 +11,27 @@ where OBJECT := { cpu | mem | net | disk }
       OPTION := { --version] }
 ```
 
-*Supported COMMAND for each OBJECT:*
+## COMMAND
+**Manditory COMMAND for each OBJECT:**
 * dump
 * monitor
 
-*Monitor COMMAND Manditory Option:*
+**Specific COMMAND for each OBJECT:**
+* OBJECT: cpu
+* OBJECT: mem
+* OBJECT: net
+* OBJECT: disk
+
+## Monitor COMMAND Option
+**Manditory Option:**
 * --interval: data monitor interval 
 
-Monitor COMMAND Optional Option:
-* --counter: Performance Data (data incremental in --interval), if no --counter, all counters shall be monitor on this OBJECT
+**Optional Option:**
+* --counter: Performance Data (data incremental in --interval), if no --counter, all counters shall be monitor on this OBJECT; multiple --counter shall be supported
 * --duration: Data monitor time duration, -f no --duration, monitor is forever
+* --output: format supported: csv, if no --output, stdout is used with friendly format
 
-*Minitor COMAMND Other Options:*
+**Specific Options:**
 * OBJECT: cpu
 * OBJECT: mem
 * OBJECT: net

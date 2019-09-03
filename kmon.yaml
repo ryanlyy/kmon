@@ -1,0 +1,16 @@
+objects:
+- name: cpu
+  main: cpu_main  #this main will be called by kmon
+  module: cpu
+- name: mem
+  main: mem_main  #this main will be called by kmon
+  module: mem
+- name: net
+  main: net_main  #this main will be called by kmon 
+  module: net
+- name: disk
+  main: disk_main  #this main will be called by kmon
+  module: disk
+- name: test
+  main: test_main
+  module: kmon_test
